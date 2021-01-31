@@ -32,3 +32,11 @@ function submitPin(){
   document.getElementById("displayPin").value = "";
 
 }
+
+function backspace(){
+  const pin = document.getElementById("typePin").value;
+  const newPin = pin.slice(0,-1)
+  document.getElementById("typePin").value = newPin;
+  // const num = Number(pin);
+  // console.log(num)
+}
