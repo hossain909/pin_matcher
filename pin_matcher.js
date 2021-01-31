@@ -1,10 +1,8 @@
 document.querySelector(".generate-btn").addEventListener("click",function(){
   const randomPin = Math.random() * 10000;
-  const randomNum = randomPin.toFixed(0)
-  if(randomNum.toString().length == 2){
-    document.getElementById("displayPin").value = randomNum + "19";
-   }else if(randomNum.toString().length == 3 ){
-    document.getElementById("displayPin").value = randomNum + "1";
+  const randomNum = randomPin.toFixed()
+  if(randomNum.toString().length == 3){
+    return randomNum;
  }else{
     document.getElementById("displayPin").value = randomNum;
   }
